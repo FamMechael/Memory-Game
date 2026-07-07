@@ -1,0 +1,91 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.p {
+    display: flex;
+    width: 15%;
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .4s;
+    margin: 20px;
+}
+.p.clicked {
+    transform: rotateY(180deg);
+}
+.p.true {
+    transform: rotateY(180deg);
+}
+.back , .front {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black 5px solid;
+}
+.back {
+    background-color: blue;
+    transform: rotateY(180deg);
+    color: white;
+}
+.front {
+    background-color: red;
+}
+.head,.high-score {
+    display: flex;
+    width: 90%;
+    background-color: black;
+    color: crimson;
+    font-size: 20px;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    display: none;
+}
+.high-score {
+    display: flex;
+    flex-wrap: wrap;
+}
+.high-score div {
+    width: 20%;
+    margin-bottom: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+button {
+    margin: 5px auto;
+    padding: 20px 30px;
+    background-color: tomato;
+    color: white;
+    font-size: 25px;
+    width: fit-content;
+    text-align: center;
+    display: block;
+}
+#re {
+    display: none;
+}
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 50px;
+}
+input {
+    width: 23%;
+    padding: 20px;
+    font-size: 25px;
+}
